@@ -1,0 +1,13 @@
+# Development Timeline
+
+This document records the development, testing, troubleshooting, and major engineering changes made during the creation of our WRO Future Engineers 2026 autonomous vehicle.
+
+The timeline shows how the mechanical design, sensors, software, and navigation strategy evolved through repeated testing and iteration.
+
+| Date | Team Member | Work Completed | Challenges / Issues | Next Steps |
+|---|---|---|---|---|
+| 29 Apr 2026 | Amelia | Read the competition documents, researched requirements, created a parts list, and began building the vehicle base. Ackermann steering was selected for the front steering mechanism. | Some parts were difficult to source. Suitable steering tutorials were difficult to find. The steering gears initially did not align correctly. | Finish and refine the base, add the remaining components, and begin programming. |
+| 6 May 2026 | Amelia | Modified the steering mechanism so that the front steering assembly was aligned with the height of the rear wheels. | Required repeated trial and error to determine the correct number of structural pieces and spacing. | Continue construction of the vehicle. |
+| 8 May 2026 | Neah | Finished building the base and began adding the wiring. | Some parts required modification to fit the final chassis layout. | Continue hardware integration. |
+| 13 May 2026 | Neah | Researched the competition requirements further and reviewed previous successful WRO Future Engineers vehicles. Modified the robot based on these observations and corrected chassis imbalance. | Limited working time was available during the session. | Begin installing the sensors. |
+| 15 May 2026 | Amelia | Stabilised the HuskyLens using an axle, changed the steering gear, began programming the HuskyLens, and researched mounting methods for the Time-of-Flight sensors. 
