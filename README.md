@@ -177,36 +177,16 @@ These problems were treated separately from software logic because a successful 
 
 ## 3.3 HuskyLens Vision Sensor
 
-A **HuskyLens** intelligent vision sensor is used for colour recognition.
+The HuskyLens was originally added to the vehicle for the **Obstacle Challenge**, where it was intended to recognise coloured obstacles and trigger different steering responses.
 
-The HuskyLens was trained to recognise the coloured objects required by the navigation strategy.
+During the development process, our team decided not to continue with the Obstacle Challenge and instead focused on completing the **Open Challenge** reliably.
 
-During development, the colour IDs stored by the HuskyLens were checked and trained before being used by the software.
+Rather than removing the HuskyLens completely, we continued experimenting with it as part of the Open Challenge development. We explored whether its visual information could be used as an additional navigation input alongside the Time-of-Flight sensors and IMU.
 
-The general control process is:
+This change reflects the iterative nature of our project. The HuskyLens began as a sensor for obstacle recognition, but after our competition strategy changed, we investigated how an existing component could still contribute to the final Open Challenge vehicle instead of redesigning the entire sensor architecture.
 
-```text
-HuskyLens detects an object
-            |
-            v
-Read recognised colour / ID
-            |
-            v
-Navigation software decides response
-            |
-            v
-Apply appropriate steering behaviour
-```
+The final Open Challenge navigation strategy therefore focuses primarily on reliable lap navigation using steering control, distance sensing, and heading correction, while the HuskyLens remains part of our development and experimentation with visual sensing.
 
-The HuskyLens also required mechanical development.
-
-On **15 May**, the camera was stabilised using an axle. However, the first position chosen for the axle reduced the adjustability of the camera. The mounting therefore had to be modified.
-
-This was an important lesson because sensor performance depends not only on code but also on physical positioning. A correctly programmed vision sensor can still perform poorly if it moves, vibrates, or points in the wrong direction.
-
-On **22 May**, we checked that the required colour IDs had been correctly learned by the HuskyLens.
-
-Later, colour detection was connected directly to steering behaviour.
 
 ---
 
